@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180733097-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180733097-1');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>M^3Depth: Self-supervised Multi-frame Multi-camera Metric Depth Estimation</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <style>
+  .section-title {
+    font-family: "Lato"
+  }
+  .authors {
+    font-family: "Lato";
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: "Lato";
+  }
+  </style>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ">
+            <h2>M<sup>3</sup>Depth: Self-supervised Multi-frame Multi-camera Metric Depth Estimation</h2>
+<!--            <h4 style="color:#5a6268;">CVPR 2024</h4>-->
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+            <img class="img-fluid" src="images/pipeline.png" alt="teasor" height="60%">
+          <p class="text-justify">This paper presents a novel self-supervised multi-frame multi-camera metric depth estimation network, termed as M<sup>3</sup>Depth, which is designed to predict reliable scale-aware surrounding depth in autonomous driving.
+            Unlike the previous works that use multiple images from a single frame or multiple frames from a single camera, M<sup>3</sup>Depth takes as inputs multi-frame images from multi-camera and constructs cost volumes for producing high-quality surrounding depth.
+            We first construct initial volumes in the spatial and temporal domains individually and propose a spatial-temporal fusion module that integrates the spatial-temporal information to yield a strong volume presentation.
+            We additionally combine the neural prior from SAM features with internal features to strengthen the depth prediction.
+            Extensive experimental results on multiple benchmarks show M<sup>3</sup>Depth achieves state-of-the-art performance.
+            The code will be made publicly available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Results of M<sup>3</sup>Depth</h3>
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Comparison results on NuScenes Benchmark</h4>
+          <br>
+          <img class="img-fluid" src="images/nusc_results.png" alt="tnt-compare">
+          <footer class="text-center" style="margin-bottom:10px">
+            SD<sup>*</sup> denotes SurroundDepth.
+          </footer>
+          <br>
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Comparison results on DDAD Benchmark</h4>
+          <br>
+          <img class="img-fluid" src="images/ddad_results.png" alt="tnt-compare">
+          <footer class="text-center" style="margin-bottom:10px">
+            SD<sup>*</sup> denotes SurroundDepth.
+          </footer>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+  </footer>
+
+</body>
+</html>
